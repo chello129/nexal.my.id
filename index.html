@@ -3,113 +3,290 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEXAL | Solusi Digital Profesional</title>
+    <title>NEXAL | Top Up Game & Voucher</title>
     <meta
       name="description"
-      content="NEXAL hadir dengan solusi digital modern, desain elegan, dan pengalaman pengguna yang profesional."
+      content="NEXAL adalah platform top up game yang cepat, aman, dan profesional. Isi diamond, voucher, atau token game dengan ID dan server yang valid."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
-          <a href="#" class="brand">NEX<span>AL</span></a>
-          <div class="nav-links">
-            <a href="#services">Layanan</a>
-            <a href="#about">Tentang</a>
-            <a href="#contact">Kontak</a>
-          </div>
-        </nav>
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><img src="logo.svg" alt="NEXAL" class="brand-icon" /><span class="brand-text">NEXAL</span></a>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="#games">Games</a>
+          <a href="#promo">Promo</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Daftar</a>
+          <a href="payment.html">Pembayaran</a>
+          <a href="order.html">Pesanan</a>
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section class="hero">
-        <div>
-          <p class="status"><span class="dot"></span> Siap membantu bisnis tumbuh</p>
-          <h1>Web yang profesional, elegan, dan siap memberi kesan pertama yang kuat.</h1>
+        <div class="hero-copy">
+          <span class="status"><span class="dot"></span> Top up game resmi dengan ID / Server</span>
+          <h1>Top up Diamond, Voucher, dan Token game tanpa ribet.</h1>
           <p>
-            NEXAL menghadirkan solusi desain dan pengembangan digital yang modern,
-            fokus pada kenyamanan pengguna, identitas brand, dan hasil yang terasa premium.
+            NEXAL hadir sebagai solusi top up game cepat dan aman untuk semua judul populer. Isi akun game Anda dengan metode pembayaran lengkap dan dukungan customer service 24/7.
           </p>
           <div class="actions">
-            <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
-            <a href="#services" class="btn btn-secondary">Lihat Layanan</a>
+            <a href="#topup" class="btn btn-primary">Mulai Top Up</a>
+            <a href="#games" class="btn btn-secondary">Lihat Game</a>
           </div>
-        </div>
 
-        <div class="hero-card" aria-label="Ringkasan performa">
-          <div class="card-top">
-            <strong>Dashboard Ringkas</strong>
-            <span class="status"><span class="dot"></span> Online</span>
-          </div>
-          <p>Desain bersih, pengalaman yang cepat, dan struktur yang mudah dikembangkan.</p>
-          <div class="metric">
-            <div>
-              <strong>+120%</strong>
-              <span>Efisiensi</span>
-            </div>
+          <div class="hero-stats">
             <div>
               <strong>24/7</strong>
               <span>Support</span>
             </div>
             <div>
               <strong>100%</strong>
-              <span>Profesional</span>
+              <span>Transaksi Aman</span>
+            </div>
+            <div>
+              <strong>80+</strong>
+              <span>Game Didukung</span>
             </div>
           </div>
         </div>
+
+        <aside class="hero-panel" id="topup">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Top Up Sekarang</p>
+              <h2>Masukkan ID & Server Akun</h2>
+            </div>
+            <span class="badge">Otomatis</span>
+          </div>
+
+          <form class="topup-form" action="#" method="post">
+            <label for="game">Game</label>
+            <select id="game" name="game">
+              <option value="ml">Mobile Legends</option>
+              <option value="ff">Free Fire</option>
+              <option value="pubg">PUBG Mobile</option>
+              <option value="valorant">Valorant</option>
+              <option value="steam">Steam Wallet</option>
+            </select>
+
+            <label for="player-id">Player ID / UID</label>
+            <input id="player-id" name="player-id" type="text" placeholder="Contoh: 123456789" />
+
+            <label for="server">Server / Zone</label>
+            <input id="server" name="server" type="text" placeholder="Contoh: SG1 / 11" />
+
+            <label for="package">Paket Top Up</label>
+            <select id="package" name="package">
+              <option>Diamond 50</option>
+              <option>Diamond 150</option>
+              <option>UC 140</option>
+              <option>Voucher Steam</option>
+              <option>Pulsa Game</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary btn-block">Lanjutkan Pembayaran</button>
+          </form>
+          <div id="order-result" class="panel-note"></div>
+
+          <div class="panel-note">
+            <p>Pastikan ID dan server sudah benar agar top up dikirim langsung ke akun Anda.</p>
+          </div>
+        </aside>
       </section>
 
-      <section id="services">
-        <h2 class="section-title">Layanan Unggulan</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Desain Website</h3>
-            <p>Visual modern, layout yang rapi, dan pengalaman pengguna yang nyaman di semua perangkat.</p>
+      <section id="games" class="section section--alt">
+        <div class="section-heading">
+          <h2 class="section-title">Game Populer</h2>
+          <p>Top up item favorit di banyak judul populer dengan harga kompetitif.</p>
+        </div>
+
+        <div class="deal-grid">
+          <article class="deal-card deal-ml" data-category="popular">
+            <div class="deal-icon">ML</div>
+            <div class="deal-badge">Flash Deal</div>
+            <div class="deal-meta">
+              <span>3738 Diamonds</span>
+              <strong>Rp 919.491</strong>
+            </div>
+            <p>(3247 + 491 bonus)</p>
           </article>
-          <article class="card">
-            <h3>Brand Identity</h3>
-            <p>Identitas visual yang konsisten untuk membangun kepercayaan dan kesan profesional.</p>
+
+          <article class="deal-card deal-ff" data-category="popular">
+            <div class="deal-icon">FF</div>
+            <div class="deal-badge">Flash Deal</div>
+            <div class="deal-meta">
+              <span>4830 Diamonds</span>
+              <strong>Rp 1.148.884</strong>
+            </div>
+            <p>(4003 + 827 bonus)</p>
           </article>
-          <article class="card">
-            <h3>Pengembangan Digital</h3>
-            <p>Solusi teknis yang cepat, fleksibel, dan siap berkembang seiring kebutuhan bisnis Anda.</p>
+
+          <article class="deal-card deal-rolex" data-category="voucher">
+            <div class="deal-icon">ST</div>
+            <div class="deal-badge">Flash Deal</div>
+            <div class="deal-meta">
+              <span>4430 Diamond</span>
+              <strong>Rp 550.915</strong>
+            </div>
+            <p>Top up cepat langsung masuk</p>
+          </article>
+
+          <article class="deal-card deal-pubg" data-category="popular">
+            <div class="deal-icon">UC</div>
+            <div class="deal-badge">Flash Deal</div>
+            <div class="deal-meta">
+              <span>1165 UC</span>
+              <strong>Rp 302.031</strong>
+            </div>
+            <p>(1080 + 85 bonus)</p>
+          </article>
+        </div>
+
+        <div class="filter-group">
+          <button class="filter-pill active" data-filter="ALL">ALL</button>
+          <button class="filter-pill" data-filter="popular">GAMES POPULER</button>
+          <button class="filter-pill" data-filter="joki">JOKI GAMES</button>
+          <button class="filter-pill" data-filter="voucher">VOUCHER</button>
+          <button class="filter-pill" data-filter="entertainment">ENTERTAINMENT</button>
+        </div>
+
+        <h3 class="section-title section-title--sub">Games Populer</h3>
+        <div class="game-grid game-grid--featured">
+          <article class="game-card" data-category="popular">
+            <div class="game-thumb game-thumb-ml">
+              <span>ML</span>
+            </div>
+            <div class="game-card-body">
+              <strong>Mobile Legends</strong>
+              <span>Diskon 16%</span>
+            </div>
+          </article>
+          <article class="game-card" data-category="popular">
+            <div class="game-thumb game-thumb-ff">
+              <span>FF</span>
+            </div>
+            <div class="game-card-body">
+              <strong>Free Fire</strong>
+              <span>Diskon 16%</span>
+            </div>
+          </article>
+          <article class="game-card" data-category="entertainment">
+            <div class="game-thumb game-thumb-mc">
+              <span>MC</span>
+            </div>
+            <div class="game-card-body">
+              <strong>Magic Chess</strong>
+              <span>Diskon 16%</span>
+            </div>
+          </article>
+          <article class="game-card" data-category="popular">
+            <div class="game-thumb game-thumb-valorant">
+              <span>VG</span>
+            </div>
+            <div class="game-card-body">
+              <strong>Valorant</strong>
+              <span>Diskon 16%</span>
+            </div>
+          </article>
+          <article class="game-card" data-category="entertainment">
+            <div class="game-thumb game-thumb-rb">
+              <span>RB</span>
+            </div>
+            <div class="game-card-body">
+              <strong>Roblox</strong>
+              <span>Diskon 16%</span>
+            </div>
+          </article>
+          <article class="game-card" data-category="joki">
+            <div class="game-thumb game-thumb-bs">
+              <span>BS</span>
+            </div>
+            <div class="game-card-body">
+              <strong>Blood Strike</strong>
+              <span>Diskon 10%</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="about">
-        <h2 class="section-title">Mengapa Memilih NEXAL?</h2>
+      <section id="promo" class="promo">
+        <h2 class="section-title">Flash Sale & Promo</h2>
+        <div class="promo-grid">
+          <article class="promo-card">
+            <h3>3738 Diamond</h3>
+            <p>Harga spesial Rp 919.491, langsung masuk ke akun MLBB.</p>
+            <span>Stok terbatas</span>
+          </article>
+          <article class="promo-card promo-card--accent">
+            <h3>4830 Diamond</h3>
+            <p>Promosi Free Fire terbaik untuk pemain aktif.</p>
+            <span>Bonus ekstra</span>
+          </article>
+          <article class="promo-card">
+            <h3>Steam Wallet</h3>
+            <p>Voucher digital siap pakai dengan pengiriman cepat.</p>
+            <span>Praktis</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2 class="section-title">Kenapa NEXAL?</h2>
         <div class="grid">
           <article class="card">
-            <h3>Fokus pada kualitas</h3>
-            <p>Setiap elemen dirancang untuk memberi kesan rapi, tegas, dan mudah dipahami.</p>
+            <h3>Top Up Real ID/Server</h3>
+            <p>Semua transaksi top up dikirim dengan validasi ID dan server untuk keamanan akun.</p>
           </article>
           <article class="card">
-            <h3>Responsif dan cepat</h3>
-            <p>Tampilan optimal di desktop, tablet, dan ponsel tanpa mengurangi kualitas visual.</p>
+            <h3>Support 24 Jam</h3>
+            <p>Customer service siap membantu sejak pemesanan hingga barang masuk ke akun.</p>
           </article>
           <article class="card">
-            <h3>Disesuaikan kebutuhan</h3>
-            <p>Layout dan konten dapat dikembangkan sesuai arah brand dan target audiens Anda.</p>
+            <h3>Pembayaran Lengkap</h3>
+            <p>Bayar dengan bank transfer, e-wallet, pulsa, atau gerai minimarket.</p>
           </article>
+        </div>
+      </section>
+
+      <section id="payments" class="payments">
+        <h2 class="section-title">Metode Pembayaran</h2>
+        <div class="payments-grid">
+          <span>QRIS</span>
+          <span>BCA</span>
+          <span>Mandiri</span>
+          <span>BNI</span>
+          <span>OVO</span>
+          <span>DANA</span>
+          <span>ShopeePay</span>
+          <span>Indomaret</span>
         </div>
       </section>
 
       <section id="contact" class="contact">
         <div>
-          <h3>Siap memulai proyek Anda?</h3>
-          <p>Bangun citra digital yang kuat dengan pendekatan yang profesional dan modern.</p>
+          <h3>Butuh Bantuan Top Up?</h3>
+          <p>Hubungi tim kami untuk menanyakan status pesanan atau konfirmasi pembayaran.</p>
         </div>
-        <a href="mailto:hello@nexal.dev" class="btn btn-primary">hello@nexal.dev</a>
+        <a href="mailto:hello@nexal.dev" class="btn btn-primary">Hello@NEXAL.dev</a>
       </section>
     </main>
 
     <footer>
-      <div class="container">
-        <p>© <span id="year"></span> NEXAL. Semua hak cipta dilindungi.</p>
+      <div class="container footer-inner">
+        <div>
+          <p>© <span id="year"></span> NEXAL</p>
+          <p>Top Up Games Favoritmu dengan proses yang cepat dan aman.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#contact">Kontak</a>
+          <a href="#promo">Promo</a>
+          <a href="#games">Games</a>
+        </div>
       </div>
     </footer>
 

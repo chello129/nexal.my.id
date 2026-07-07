@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXAL | Daftar Member</title>
+    <meta
+      name="description"
+      content="Daftar akun NEXAL untuk dapatkan promo member, akses pesanan, dan layanan top up lebih cepat."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><img src="logo.svg" alt="NEXAL" class="brand-icon" /><span class="brand-text">NEXAL</span></a>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="login.html">Login</a>
+          <a href="payment.html">Pembayaran</a>
+          <a href="order.html">Pesanan</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <div class="hero-copy">
+          <span class="status"><span class="dot"></span> Daftar Member</span>
+          <h1>Buat akun NEXAL sekarang</h1>
+          <p>Dapatkan akses promo, GoCard, dan pengalaman top up yang lebih cepat.</p>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Daftar</p>
+              <h2>Buat Akun Baru</h2>
+            </div>
+          </div>
+
+          <form class="auth-form" action="#" method="post">
+            <label for="name">Nama Lengkap</label>
+            <input id="name" name="name" type="text" placeholder="Nama lengkap" />
+
+            <label for="register-email">Email</label>
+            <input id="register-email" name="email" type="email" placeholder="contoh@mail.com" />
+
+            <label for="phone">Nomor HP</label>
+            <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxxxx" />
+
+            <label for="register-password">Password</label>
+            <input id="register-password" name="password" type="password" placeholder="Buat password" />
+
+            <button type="submit" class="btn btn-primary btn-block">Daftar Sekarang</button>
+          </form>
+
+          <div class="panel-note">
+            Sudah punya akun? <a href="login.html">Masuk di sini</a> untuk memulai top up.
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <p>© <span id="year"></span> NEXAL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

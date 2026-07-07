@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXAL | Pembayaran</title>
+    <meta
+      name="description"
+      content="Halaman pembayaran NEXAL untuk cek pesanan, metode pembayaran, dan konfirmasi transaksi top up game."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><img src="logo.svg" alt="NEXAL" class="brand-icon" /><span class="brand-text">NEXAL</span></a>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Daftar</a>
+          <a href="order.html">Pesanan</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section section--alt">
+        <div class="section-heading">
+          <h2 class="section-title">Pembayaran & Cek Pesanan</h2>
+          <p>Gunakan halaman ini untuk melihat metode pembayaran dan melacak pesanan top up.</p>
+        </div>
+
+        <div class="payment-panel">
+          <article class="card">
+            <h3>Cek Pesanan</h3>
+            <form class="order-check-form" action="#" method="post">
+              <label for="order-id">Nomor Pesanan</label>
+              <input id="order-id" name="order-id" type="text" placeholder="Contoh: NEX-123456" />
+              <button type="submit" class="btn btn-primary btn-block">Cek Status</button>
+            </form>
+            <div id="order-check-result" class="panel-note"></div>
+          </article>
+
+          <article class="card">
+            <h3>Konfirmasi Pembayaran</h3>
+            <form class="payment-confirm-form" action="#" method="post">
+              <label for="confirm-order-id">Nomor Pesanan</label>
+              <input id="confirm-order-id" name="order-id" type="text" placeholder="Contoh: NEX-123456" />
+
+              <label for="payment-method">Metode Pembayaran</label>
+              <select id="payment-method" name="payment-method">
+                <option>Transfer Bank</option>
+                <option>OVO</option>
+                <option>DANA</option>
+                <option>ShopeePay</option>
+                <option>QRIS</option>
+              </select>
+
+              <label for="amount">Jumlah Bayar</label>
+              <input id="amount" name="amount" type="text" placeholder="Contoh: Rp 319.000" />
+
+              <button type="submit" class="btn btn-primary btn-block">Konfirmasi Pembayaran</button>
+            </form>
+            <div id="payment-confirm-result" class="panel-note"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="promo-card">
+          <h3>Perhatian</h3>
+          <p>Setelah melakukan pembayaran, segera kirim bukti ke WhatsApp CS agar pesanan segera diproses.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <p>© <span id="year"></span> NEXAL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

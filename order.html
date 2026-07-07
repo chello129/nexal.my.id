@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXAL | Detail Pesanan</title>
+    <meta
+      name="description"
+      content="Halaman detail pesanan NEXAL untuk melihat ringkasan top up game dan instruksi pembayaran."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><img src="logo.svg" alt="NEXAL" class="brand-icon" /><span class="brand-text">NEXAL</span></a>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Daftar</a>
+          <a href="payment.html">Pembayaran</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <div class="section-heading">
+          <h2 class="section-title">Detail Pesanan</h2>
+          <p>Masukkan nomor pesanan untuk melihat status top up dan instruksi pembayaran.</p>
+        </div>
+
+        <article class="card">
+          <h3>Cek Pesanan</h3>
+          <form class="order-check-form" action="#" method="post">
+            <label for="order-id">Nomor Pesanan</label>
+            <input id="order-id" name="order-id" type="text" placeholder="Contoh: NEX-123456" />
+            <button type="submit" class="btn btn-primary btn-block">Cek Status</button>
+          </form>
+          <div id="order-check-result" class="panel-note"></div>
+        </article>
+
+        <article class="card">
+          <h3>Informasi Pembayaran</h3>
+          <div class="panel-note">
+            Jika pesanan Anda tidak otomatis terupdate, gunakan halaman Pembayaran untuk konfirmasi manual setelah transfer.
+          </div>
+          <div class="panel-actions">
+            <a href="payment.html" class="btn btn-secondary">Halaman Pembayaran</a>
+            <a href="mailto:hello@nexal.dev" class="btn btn-primary">Hubungi CS</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <p>© <span id="year"></span> NEXAL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

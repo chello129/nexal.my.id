@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXAL | Login Member</title>
+    <meta
+      name="description"
+      content="Login member NEXAL untuk mengakses fitur top up cepat, cek pesanan, dan promo eksklusif."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><img src="logo.svg" alt="NEXAL" class="brand-icon" /><span class="brand-text">NEXAL</span></a>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="register.html">Daftar</a>
+          <a href="payment.html">Pembayaran</a>
+          <a href="order.html">Pesanan</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <div class="hero-copy">
+          <span class="status"><span class="dot"></span> Login Member</span>
+          <h1>Masuk ke akun NEXAL kamu</h1>
+          <p>Cek riwayat top up, promo member, dan kelola pesanan dengan mudah.</p>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Masuk</p>
+              <h2>Login Akun</h2>
+            </div>
+          </div>
+
+          <form class="auth-form" action="#" method="post">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="contoh@mail.com" />
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Masukkan password" />
+
+            <button type="submit" class="btn btn-primary btn-block">Masuk Sekarang</button>
+          </form>
+
+          <div class="panel-note">
+            Belum punya akun? <a href="register.html">Daftar sekarang</a> untuk mendapatkan promo member dan akses GoCard.
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <p>© <span id="year"></span> NEXAL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
