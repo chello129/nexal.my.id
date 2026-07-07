@@ -73,9 +73,10 @@ header {
 }
 
 .brand-icon {
-  width: 3rem;
-  height: auto;
-  max-width: 3rem;
+  width: 3rem !important;
+  height: auto !important;
+  max-width: 3rem !important;
+  max-height: 3rem !important;
   display: block;
   flex-shrink: 0;
   object-fit: contain;
