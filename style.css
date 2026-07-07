@@ -260,6 +260,43 @@ header {
   color: var(--text);
 }
 
+/* Improve select appearance for dark theme and mobile */
+.topup-form select,
+.auth-form select,
+.order-check-form select,
+.payment-confirm-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  padding-right: 3rem; /* space for pseudo arrow */
+  position: relative;
+}
+
+.topup-form select option,
+.auth-form select option,
+.order-check-form select option,
+.payment-confirm-form select option {
+  background: rgba(12, 22, 54, 0.95);
+  color: var(--text);
+}
+
+/* Add a custom arrow using a pseudo-element on the select's container */
+.select-wrap { position: relative; }
+.select-wrap:after {
+  content: '';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.6rem;
+  height: 0.6rem;
+  border-right: 2px solid rgba(255,255,255,0.6);
+  border-bottom: 2px solid rgba(255,255,255,0.6);
+  transform: translateY(-50%) rotate(45deg);
+  pointer-events: none;
+}
+
 .topup-form input::placeholder {
   color: rgba(255, 255, 255, 0.45);
 }

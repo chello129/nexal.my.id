@@ -66,13 +66,15 @@
 
           <form class="topup-form" action="#" method="post">
             <label for="game">Game</label>
-            <select id="game" name="game">
-              <option value="ml">Mobile Legends</option>
-              <option value="ff">Free Fire</option>
-              <option value="pubg">PUBG Mobile</option>
-              <option value="valorant">Valorant</option>
-              <option value="steam">Steam Wallet</option>
-            </select>
+            <div class="select-wrap">
+              <select id="game" name="game">
+                <option value="ml">Mobile Legends</option>
+                <option value="ff">Free Fire</option>
+                <option value="pubg">PUBG Mobile</option>
+                <option value="valorant">Valorant</option>
+                <option value="steam">Steam Wallet</option>
+              </select>
+            </div>
 
             <label for="player-id">Player ID / UID</label>
             <input id="player-id" name="player-id" type="text" placeholder="Contoh: 123456789" />
@@ -81,13 +83,15 @@
             <input id="server" name="server" type="text" placeholder="Contoh: SG1 / 11" />
 
             <label for="package">Paket Top Up</label>
-            <select id="package" name="package">
-              <option>Diamond 50</option>
-              <option>Diamond 150</option>
-              <option>UC 140</option>
-              <option>Voucher Steam</option>
-              <option>Pulsa Game</option>
-            </select>
+            <div class="select-wrap">
+              <select id="package" name="package">
+                <option>Diamond 50</option>
+                <option>Diamond 150</option>
+                <option>UC 140</option>
+                <option>Voucher Steam</option>
+                <option>Pulsa Game</option>
+              </select>
+            </div>
 
             <button type="submit" class="btn btn-primary btn-block">Lanjutkan Pembayaran</button>
           </form>
