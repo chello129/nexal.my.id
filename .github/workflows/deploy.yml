@@ -1,0 +1,22 @@
+name: 🚀 Auto Deploy Website
+
+on:
+  push:
+    branches:
+      - main # Or change to 'master' if your default branch is named master
+
+jobs:
+  web-deploy:
+    name: Sync Files
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Syncing to Server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ./ # Leaves it at root of the FTP folder (nexal.my.id)
