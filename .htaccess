@@ -1,0 +1,5 @@
+# Ensure the site serves index.html as the default document
+DirectoryIndex index.html
+
+# Prevent directory listings for safety
+Options -Indexes
